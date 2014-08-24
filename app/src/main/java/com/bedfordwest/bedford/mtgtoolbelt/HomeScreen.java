@@ -2,6 +2,7 @@ package com.bedfordwest.bedford.mtgtoolbelt;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -63,6 +64,8 @@ public class HomeScreen extends Activity {
                 opponentlife--;
                 opponentlifelabel.setText((String.valueOf(opponentlife)));
                 break;
+            default:
+                Log.i("HomeScreen", "adjustLife() - unhandled button press received!");
 
         }
     }
