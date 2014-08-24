@@ -19,7 +19,8 @@
             android:layout_width="30dp"
             android:layout_height="35dp"
             android:paddingRight="0dp"
-            android:paddingLeft="0dp"/>
+            android:paddingLeft="0dp"
+            android:background="@drawable/minus"/>
 
         <EditText
             android:id="@+id/opponent_life"
@@ -30,14 +31,15 @@
             android:paddingLeft="0dp"
             android:text="20"
             android:textSize="30dp"
-            android:background="null"/>
+            android:background="@null"/>
 
 
         <ImageButton
             android:id="@+id/plus_opponent_life"
             android:layout_width="30dp"
             android:layout_height="35dp"
-            android:layout_toRightOf="@id/opponent_life"/>
+            android:layout_toRightOf="@id/opponent_life"
+            android:background="@drawable/plus"/>
 
     </RelativeLayout>
 
@@ -52,7 +54,8 @@
             android:layout_width="30dp"
             android:layout_height="35dp"
             android:paddingRight="0dp"
-            android:paddingLeft="0dp"/>
+            android:paddingLeft="0dp"
+            android:background="@drawable/minus"/>
 
         <EditText
             android:id="@+id/your_life"
@@ -63,14 +66,15 @@
             android:paddingLeft="0dp"
             android:text="20"
             android:textSize="30dp"
-            android:background="null"/>
+            android:background="@null"/>
 
 
         <ImageButton
             android:id="@+id/plus_your_life"
             android:layout_width="30dp"
             android:layout_height="35dp"
-            android:layout_toRightOf="@id/your_life"/>
+            android:layout_toRightOf="@id/your_life"
+            android:background="@drawable/plus"/>
 
     </RelativeLayout>
 
