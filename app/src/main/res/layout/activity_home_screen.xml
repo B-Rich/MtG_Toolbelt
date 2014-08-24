@@ -8,9 +8,70 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".HomeScreen">
 
-    <TextView
-        android:text="@string/hello_world"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/minus_opponent_life"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:paddingRight="0dp"
+            android:paddingLeft="0dp"/>
+
+        <EditText
+            android:id="@+id/opponent_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/minus_opponent_life"
+            android:paddingRight="0dp"
+            android:paddingLeft="0dp"
+            android:text="20"
+            android:textSize="30dp"
+            android:background="null"/>
+
+
+        <ImageButton
+            android:id="@+id/plus_opponent_life"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/opponent_life"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/minus_your_life"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:paddingRight="0dp"
+            android:paddingLeft="0dp"/>
+
+        <EditText
+            android:id="@+id/your_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/minus_your_life"
+            android:paddingRight="0dp"
+            android:paddingLeft="0dp"
+            android:text="20"
+            android:textSize="30dp"
+            android:background="null"/>
+
+
+        <ImageButton
+            android:id="@+id/plus_your_life"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@id/your_life"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
