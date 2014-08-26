@@ -94,7 +94,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentRight="true"
-            android:background="@drawable/M_35X35"
+            android:background="@drawable/m_35x35"
             android:onClick="createToken"/>
 
         <View style="@style/Divider"
@@ -109,7 +109,7 @@
             android:layout_height="35dp"
             android:layout_alignParentRight="true"
             android:layout_below="@id/divider"
-            android:background="@drawable/M_35X35"
+            android:background="@drawable/m_35x35"
             android:onClick="createToken"/>
 
 

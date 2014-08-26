@@ -4,5 +4,7 @@
     <string name="app_name">M:tG Toolbelt</string>
     <string name="hello_world">Greetings, planeswalker!</string>
     <string name="action_settings">Settings</string>
+    <string name="create_token_title">Please specify token parameters:</string>
+    <string name="create_token_message">Choose a color and the power/toughness.</string>
 
 </resources>
