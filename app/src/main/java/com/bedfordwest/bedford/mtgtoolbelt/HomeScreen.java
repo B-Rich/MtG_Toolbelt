@@ -1,7 +1,7 @@
 package com.bedfordwest.bedford.mtgtoolbelt;
 
 import android.app.Activity;
-import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -11,6 +11,8 @@ import android.widget.EditText;
 
 
 public class HomeScreen extends Activity {
+
+    public final static String EXTRA_MESSAGE = "com.bedfordwest.bedford.mtgtoolbelt.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,25 +77,21 @@ public class HomeScreen extends Activity {
     //Method to handle input from the create token buttons on the right side of the screen
     public void createToken(View v)
     {
-        //go ahead and create the new token object - will assign values below
-        Tokens new_token = new Tokens();
 
-
-        // (I should probably change the token creation to a new page instead of a dialogue)
-        //create an alert dialogue since the user will need to make some choices
-        AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        builder.setTitle(R.string.create_token_title)
-                .setMessage(R.string.create_token_message);
+        String tokenType = "";
 
         if(v.getId() == R.id.opponent_token_button)
-        {
+            tokenType = "opponent";
 
-        }
 
         else if(v.getId() == R.id.your_token_button)
-        {
+            tokenType = "your";
 
-        }
+        //The user is going to be making a few choices when they create a token,
+        //so we will send them to a new page to make those decisions.
+        Intent intent = new Intent(v.getContext(), TokenCreationActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, tokenType); //pass the token type to the activity as a string
+        startActivity(intent);
 
     }
 
