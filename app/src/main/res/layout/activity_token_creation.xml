@@ -9,8 +9,41 @@
     tools:context="com.bedfordwest.bedford.mtgtoolbelt.TokenCreationActivity">
 
     <TextView
+        android:id="@+id/token_intro"
         android:text="@string/create_token_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/power_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power"
+        android:layout_below="@id/token_intro"/>
+
+    <EditText
+        android:id="@+id/power_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_intro"
+        android:layout_toRightOf="@id/power_label"/>
+
+    <TextView
+        android:id="@+id/toughness_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toughness"
+        android:layout_below="@id/token_intro"
+        android:layout_toRightOf="@id/power_field"/>
+
+    <EditText
+        android:id="@+id/toughness_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_intro"
+        android:layout_toRightOf="@id/toughness_label"/>
+
 
 </RelativeLayout>
