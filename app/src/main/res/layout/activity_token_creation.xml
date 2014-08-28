@@ -52,58 +52,58 @@
         android:text="@string/token_color_string"
         android:layout_below="@id/power_field"/>
 
-    <ImageButton
+    <RadioButton
         android:id="@+id/green_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="#"
+        android:background="@drawable/token_radio"
         android:layout_below="@id/token_color_choice" />
 
-    <ImageButton
+    <RadioButton
         android:id="@+id/red_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="#"
+        android:background="@drawable/token_radio"
         android:layout_below="@id/token_color_choice"
         android:layout_toRightOf="@id/green_token" />
 
-    <ImageButton
+    <RadioButton
         android:id="@+id/black_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="#"
+        android:background="@drawable/token_radio"
         android:layout_below="@id/token_color_choice"
         android:layout_toRightOf="@id/red_token" />
 
-    <ImageButton
+    <RadioButton
         android:id="@+id/white_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="#"
+        android:background="@drawable/token_radio"
         android:layout_below="@id/token_color_choice"
         android:layout_toRightOf="@id/black_token" />
 
-    <ImageButton
+    <RadioButton
         android:id="@+id/blue_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="#"
+        android:background="@drawable/token_radio"
         android:layout_below="@id/token_color_choice"
         android:layout_toRightOf="@id/white_token" />
 
-    <ImageButton
+    <RadioButton
         android:id="@+id/multicolor_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="#"
+        android:background="@drawable/token_radio"
         android:layout_below="@id/token_color_choice"
         android:layout_toRightOf="@id/blue_token" />
 
-    <ImageButton
+    <RadioButton
         android:id="@+id/colorless_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="#"
+        android:background="@drawable/token_radio"
         android:layout_below="@id/token_color_choice"
         android:layout_toRightOf="@id/multicolor_token" />
 
