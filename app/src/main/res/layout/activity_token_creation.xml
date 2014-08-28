@@ -45,5 +45,67 @@
         android:layout_below="@id/token_intro"
         android:layout_toRightOf="@id/toughness_label"/>
 
+    <TextView
+        android:id="@+id/token_color_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/token_color_string"
+        android:layout_below="@id/power_field"/>
+
+    <ImageButton
+        android:id="@+id/green_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_color_choice" />
+
+    <ImageButton
+        android:id="@+id/red_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_color_choice"
+        android:layout_toRightOf="@id/green_token" />
+
+    <ImageButton
+        android:id="@+id/black_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_color_choice"
+        android:layout_toRightOf="@id/red_token" />
+
+    <ImageButton
+        android:id="@+id/white_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_color_choice"
+        android:layout_toRightOf="@id/black_token" />
+
+    <ImageButton
+        android:id="@+id/blue_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_color_choice"
+        android:layout_toRightOf="@id/white_token" />
+
+    <ImageButton
+        android:id="@+id/multicolor_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_color_choice"
+        android:layout_toRightOf="@id/blue_token" />
+
+    <ImageButton
+        android:id="@+id/colorless_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:layout_below="@id/token_color_choice"
+        android:layout_toRightOf="@id/multicolor_token" />
+
 
 </RelativeLayout>

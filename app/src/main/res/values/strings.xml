@@ -7,5 +7,6 @@
     <string name="create_token_title">Please specify token parameters:</string>
     <string name="create_token_message">Choose a color and the power/toughness.</string>
     <string name="title_activity_token_creation">TokenCreationActivity</string>
+    <string name="token_color_string">Please specify the color of the token:</string>
 
 </resources>
